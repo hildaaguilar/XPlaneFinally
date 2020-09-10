@@ -18,7 +18,7 @@ namespace loops
         public static void runCommand(String cmndPath)//GOAL!!!
         {
             byte[] data = Encoding.ASCII.GetBytes("C" + "M" + "N" + "D" + "\0");//bacially saying take hello world and converted it to ones and zeros
-                                                                                //string cmndPath = "sim/flight_controls/brakes_regular";
+             //git changes                                                                   //string cmndPath = "sim/flight_controls/brakes_regular";
             //string cmndPath = "sim/engines/throttle_up";
             byte[] cmndData = Encoding.ASCII.GetBytes(cmndPath + "\0");
             byte[] combineData = Combine(data, cmndData);
